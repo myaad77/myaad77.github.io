@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مغامرة المبدعة الرقمية | مراجعة خامس</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap');
+:root{--ink:#172554;--muted:#64748b;--purple:#7357e8;--pink:#ed67a9;--mint:#a8f0dc;--paper:#fff;--line:#e8eaf5}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:'Tajawal',Tahoma,Arial,sans-serif;color:var(--ink);background:radial-gradient(ellipse at 8% 12%,#ffe2f0 0,transparent 32%),radial-gradient(ellipse at 90% 88%,#dffcf3 0,transparent 32%),#f4f3ff;display:grid;place-items:center;padding:22px;overflow-x:hidden}
+.spark{position:fixed;font-size:28px;opacity:.55;pointer-events:none}.s1{top:8%;right:8%}.s2{top:20%;left:9%}.s3{bottom:9%;right:12%}.s4{bottom:19%;left:7%}
+.shell{width:min(780px,100%);background:#ffffffeb;border:1px solid #fff;border-radius:30px;box-shadow:0 24px 70px #4338ca1c;overflow:hidden;position:relative}.top{height:9px;background:linear-gradient(90deg,var(--mint),#8cdaff,var(--purple),var(--pink))}.inner{padding:clamp(24px,6vw,54px)}
+.brand{display:flex;align-items:center;justify-content:space-between;gap:15px}.badge{background:#f0edff;color:#5941c8;border-radius:99px;padding:9px 15px;font-size:14px;font-weight:800}.brandmark{font-weight:900;color:#7357e8}.hero{text-align:center;padding:32px 0 14px}.mascot{font-size:63px;display:inline-grid;place-items:center;width:100px;height:100px;border-radius:32px;background:linear-gradient(140deg,#e9e5ff,#fff0f7);transform:rotate(-4deg);box-shadow:0 12px 24px #7863d31b}.eyebrow{color:#967fe0;font-weight:800;letter-spacing:.5px;margin:22px 0 7px}.hero h1{font-size:clamp(30px,6vw,48px);line-height:1.17;margin:0;font-weight:900}.hero h1 em{font-style:normal;color:var(--purple)}.subtitle{color:var(--muted);font-size:18px;margin:13px 0 0;line-height:1.8}
+.form{max-width:480px;margin:28px auto 0;text-align:right}.form label{display:block;font-weight:800;margin-bottom:9px}.form input{width:100%;border:2px solid var(--line);border-radius:16px;padding:16px 18px;font:700 18px 'Tajawal',Tahoma;outline:none;transition:.2s;background:white}.form input:focus{border-color:#a596f0;box-shadow:0 0 0 4px #7357e81a}.hint{text-align:center;color:#8b92a8;margin:12px 0 0;font-size:14px}
+button{font-family:inherit;cursor:pointer;border:0}.primary{background:linear-gradient(100deg,#7357e8,#a256dc);color:white;border-radius:16px;padding:16px 22px;font-size:19px;font-weight:900;box-shadow:0 10px 20px #7357e83c;transition:transform .15s,box-shadow .15s}.primary:hover{transform:translateY(-2px);box-shadow:0 14px 24px #7357e84a}.startbtn{width:100%;margin-top:19px}.footer{text-align:center;color:#98a0b6;font-size:13px;padding-top:24px}
+.gamehead{display:flex;align-items:center;justify-content:space-between;gap:12px}.player{font-weight:900;font-size:18px}.scorepill{background:#e7faf4;color:#14795c;padding:9px 14px;border-radius:99px;font-weight:900}.progressrow{margin:25px 0 7px;display:flex;justify-content:space-between;color:var(--muted);font-weight:700}.bar{height:10px;background:#efeff7;border-radius:99px;overflow:hidden}.fill{height:100%;width:0;background:linear-gradient(90deg,#a5edd9,#7255e8);border-radius:99px;transition:width .4s}.qmeta{display:inline-flex;background:#f2efff;color:#6b52d7;padding:8px 13px;border-radius:12px;font-weight:800;margin-top:29px}.question{font-size:clamp(23px,4.6vw,34px);line-height:1.65;margin:15px 0 23px;font-weight:900}.answers{display:grid;grid-template-columns:1fr 1fr;gap:12px}.answer{background:white;border:2px solid var(--line);border-radius:16px;padding:16px 18px;text-align:right;font-size:18px;font-weight:800;color:var(--ink);min-height:64px;transition:.15s}.answer:hover:not(:disabled){border-color:#b3a6f2;background:#faf9ff;transform:translateY(-1px)}.answer.correct{border-color:#62c9a6;background:#eafbf4;color:#126b52}.answer.wrong{border-color:#f29ab6;background:#fff0f4;color:#a32954}.answer:disabled{cursor:default}.feedback{min-height:31px;margin:16px 0 5px;font-weight:800;font-size:17px}.feedback.good{color:#178261}.feedback.bad{color:#ad3d61}.next{display:block;margin:4px 0 0 auto;min-width:175px}.hidden{display:none!important}
+.result{text-align:center}.result .mascot{margin:8px auto 14px}.result h2{font-size:36px;margin:5px}.result p{color:var(--muted);font-size:19px}.scorebig{font-size:74px;font-weight:900;color:var(--purple);line-height:1;margin:17px 0 6px}.scorebig small{font-size:27px;color:#aaa4c8}.meter{height:12px;background:#efeff7;border-radius:99px;margin:22px auto 26px;max-width:400px;overflow:hidden}.meter i{display:block;height:100%;background:linear-gradient(90deg,#a5edd9,#7255e8);border-radius:99px}.result-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.secondary{background:#f0edff;color:#624bd1;border-radius:16px;padding:15px 20px;font-size:17px;font-weight:900}.review{text-align:right;margin:22px auto 0;max-width:470px}.review summary{cursor:pointer;font-weight:900;color:#604bce}.review li{margin:9px 0;line-height:1.6}.note{font-size:13px!important;color:#9aa1b3!important;margin-top:24px}
+@media(max-width:560px){body{padding:12px}.shell{border-radius:23px}.answers{grid-template-columns:1fr}.answer{min-height:56px}.inner{padding:25px 21px}.hero{padding-top:25px}.footer{padding-top:18px}}
+@media print{body{background:white}.spark,.result-actions,.review{display:none!important}.shell{box-shadow:none}}
+</style>
+</head>
+<body>
+<span class="spark s1">✦</span><span class="spark s2">✿</span><span class="spark s3">✧</span><span class="spark s4">✦</span>
+<main class="shell"><div class="top"></div><div class="inner">
+<div class="brand"><span class="badge">🎓 الصف الخامس</span><span class="brandmark">✦ رحلة المعرفة</span></div>
+<section id="welcome">
+ <div class="hero"><div class="mascot">👩🏻‍💻</div><p class="eyebrow">جاهزة للتحدّي؟</p><h1>مغامرة <em>المبدعة الرقمية</em></h1><p class="subtitle">اختبري معلوماتك في الحاسب ومهاراتك الرقمية،<br>واجمعي أكبر عدد من النجوم! ⭐</p></div>
+ <div class="form"><label for="studentName">ما اسم الطالبة البطلة؟</label><input id="studentName" type="text" maxlength="40" placeholder="اكتبي اسمك هنا" autocomplete="given-name"><button class="primary startbtn" id="start">ابدئي المغامرة ✨</button><p class="hint">٤٠ سؤالًا قصيرة • اختاري الإجابة الصحيحة • نتيجتك في النهاية</p></div>
+ <div class="footer">صُممت للمراجعة والتعلّم بكل ثقة 💜</div>
+</section>
+<section id="play" class="hidden" aria-live="polite">
+ <div class="gamehead"><span class="player" id="hello"></span><span class="scorepill">⭐ <span id="score">٠</span></span></div>
+ <div class="progressrow"><span id="qcount"></span><span id="percent"></span></div><div class="bar"><div class="fill" id="fill"></div></div>
+ <span class="qmeta" id="category"></span><h2 class="question" id="question"></h2><div class="answers" id="answers"></div>
+ <div class="feedback" id="feedback" role="status"></div><button class="primary next hidden" id="next">السؤال التالي ←</button>
+</section>
+<section id="done" class="result hidden">
+ <div class="mascot" id="resultEmoji">🏆</div><p class="eyebrow">أحسنتِ يا بطلة!</p><h2 id="resultTitle"></h2><p id="resultLine"></p><div class="scorebig"><span id="finalScore"></span><small> / ٤٠</small></div><div class="meter"><i id="resultBar"></i></div><div class="result-actions"><button class="primary" id="again">العبِي مرة أخرى ↻</button><button class="secondary" id="print">احفظي النتيجة 🖨️</button></div>
+ <details class="review"><summary>شاهدي الأسئلة التي تحتاج مراجعة</summary><ol id="mistakes"></ol></details><p class="note">هذه اللعبة للمراجعة الذاتية، والنتيجة تظهر على هذا الجهاز فقط.</p>
+</section>
+</div></main>
+<script>
+const questions=[
+{t:'صح أم خطأ',q:'اللوحة الأم هي المركز الرئيس للحاسب وتتصل بها بقية أجزائه.',a:['صح','خطأ'],c:0},
+{t:'صح أم خطأ',q:'يحتوي الحاسب المحمول على بطارية داخلية.',a:['صح','خطأ'],c:0},
+{t:'صح أم خطأ',q:'يعتمد الحاسب اللوحي عادةً على لوحة المفاتيح لإدخال البيانات.',a:['صح','خطأ'],c:1},
+{t:'صح أم خطأ',q:'لوحة اللمس بديل شائع للفأرة في الحاسب المحمول.',a:['صح','خطأ'],c:0},
+{t:'صح أم خطأ',q:'تُستخدم كرة التتبع لتحريك مؤشر الحاسب.',a:['صح','خطأ'],c:0},
+{t:'صح أم خطأ',q:'ذاكرة الوصول العشوائي RAM تحتفظ بالبيانات مدة قصيرة.',a:['صح','خطأ'],c:0},
+{t:'صح أم خطأ',q:'القرص الصلب من أجهزة التخزين الرئيسة في الحاسب.',a:['صح','خطأ'],c:0},
+{t:'صح أم خطأ',q:'الماسح الضوئي من أجهزة الإخراج.',a:['صح','خطأ'],c:1},
+{t:'صح أم خطأ',q:'تتميز الطابعة النافثة للحبر دائمًا بأنها الأسرع والأعلى جودة.',a:['صح','خطأ'],c:1},
+{t:'صح أم خطأ',q:'بحسب وحدات القياس الشائعة في المنهج، الكيلوبايت أكبر من البايت.',a:['صح','خطأ'],c:0},
+{t:'صح أم خطأ',q:'الميجابايت أكبر من الجيجابايت.',a:['صح','خطأ'],c:1},
+{t:'صح أم خطأ',q:'امتداد MP3 يدل غالبًا على ملف صوتي.',a:['صح','خطأ'],c:0},
+{t:'صح أم خطأ',q:'امتداد XLSX يُستخدم عادةً لملفات الجداول الإلكترونية.',a:['صح','خطأ'],c:0},
+{t:'صح أم خطأ',q:'يُستخدم الميكروفون لتسجيل المقاطع الصوتية.',a:['صح','خطأ'],c:0},
+{t:'صح أم خطأ',q:'يكفي أن يتصل جهاز الالتقاط بالحاسب كي تنتقل البيانات منه تلقائيًا في كل الحالات.',a:['صح','خطأ'],c:1},
+{t:'صح أم خطأ',q:'عند حذف ملف من الحاسب يُحذف نهائيًا مباشرةً دائمًا.',a:['صح','خطأ'],c:1},
+{t:'صح أم خطأ',q:'أوداسيتي Audacity برنامج مجاني مفتوح المصدر لتحرير الصوت.',a:['صح','خطأ'],c:0},
+{t:'صح أم خطأ',q:'يجوز نسخ أي صورة من الإنترنت وتوزيعها دون إذن صاحبها.',a:['صح','خطأ'],c:1},
+{t:'صح أم خطأ',q:'التسطير الأزرق في Word يدل دائمًا على خطأ إملائي.',a:['صح','خطأ'],c:1},
+{t:'صح أم خطأ',q:'لطباعة مستند في Word يمكن الضغط على Ctrl+P.',a:['صح','خطأ'],c:0},
+{t:'اختاري الإجابة الصحيحة',q:'أي جهاز خفيف الوزن وسهل الحمل ويعمل ببطارية داخلية؟',a:['الحاسب المكتبي','الطابعة','الحاسب المحمول','لوحة اللمس'],c:2},
+{t:'اختاري الإجابة الصحيحة',q:'أي جهاز يتيح الرسم اليدوي بالقلم بطريقة تشبه الرسم على الورق؟',a:['لوحة اللمس','كرة التتبع','لوحة الألعاب','لوحة الرسم'],c:3},
+{t:'اختاري الإجابة الصحيحة',q:'ما الجهاز الذي يُستخدم للتحكم في الألعاب، ويُسمى أحيانًا ذراع الألعاب؟',a:['لوحة اللمس','لوحة الألعاب','الميكروفون','الماسح الضوئي'],c:1},
+{t:'اختاري الإجابة الصحيحة',q:'أي جهاز يعطينا انطباعًا بوجودنا في عالم مختلف؟',a:['شاشة اللمس','لوحة الرسم','نظارات الواقع الافتراضي','كرة التتبع'],c:2},
+{t:'اختاري الإجابة الصحيحة',q:'ما الجزء الذي ينفذ العمليات ويُسمى عقل الحاسب؟',a:['القرص الصلب','المعالج','اللوحة الأم','مزود الطاقة'],c:1},
+{t:'اختاري الإجابة الصحيحة',q:'أي ذاكرة تخزن البيانات التي تحتاجها وحدة المعالجة لفترة قصيرة؟',a:['الذاكرة الوميضية','محرك الأقراص','ذاكرة الوصول العشوائي','القرص الصلب'],c:2},
+{t:'اختاري الإجابة الصحيحة',q:'أي جزء يزود الحاسب بالطاقة الكهربائية؟',a:['المعالج','القرص الصلب','اللوحة الأم','مزود الطاقة'],c:3},
+{t:'اختاري الإجابة الصحيحة',q:'أي مما يلي يُعد جهاز تخزين خارجيًا؟',a:['مكبرات الصوت','وحدة الذاكرة الوميضية','الشاشة','الطابعة'],c:1},
+{t:'اختاري الإجابة الصحيحة',q:'أي جهاز من أجهزة الإدخال؟',a:['الطابعة','مكبرات الصوت','لوحة المفاتيح','سماعات الرأس'],c:2},
+{t:'اختاري الإجابة الصحيحة',q:'أي مما يلي من أجهزة الإخراج؟',a:['الماسح الضوئي','الفأرة','الميكروفون','الشاشة'],c:3},
+{t:'اختاري الإجابة الصحيحة',q:'أي نوع من الطابعات شائع ومنخفض الثمن غالبًا؟',a:['الشاشة','الطابعة النافثة للحبر','طابعة الليزر','الماسح الضوئي'],c:1},
+{t:'اختاري الإجابة الصحيحة',q:'ما أكبر وحدة من وحدات قياس حجم الملفات التالية؟',a:['TB','KB','MB','GB'],c:0},
+{t:'اختاري الإجابة الصحيحة',q:'أي مفتاح يساعد على كتابة الحروف الإنجليزية الكبيرة؟',a:['Enter','Delete','Backspace','Caps Lock'],c:3},
+{t:'اختاري الإجابة الصحيحة',q:'أي امتداد يدل عادةً على ملف فيديو؟',a:['PDF','DOCX','MP4','MP3'],c:2},
+{t:'اختاري الإجابة الصحيحة',q:'ما العملية المستخدمة لتقليل حجم الملفات والمجلدات؟',a:['الاختصار','النسخ','الضغط','الحذف'],c:2},
+{t:'اختاري الإجابة الصحيحة',q:'إلى أين ينتقل الملف عادةً عند حذفه؟',a:['سطح المكتب','المجلد المضغوط','الاختصار','سلة المحذوفات'],c:3},
+{t:'اختاري الإجابة الصحيحة',q:'التسطير الأزرق في Word قد يشير إلى خطأ…',a:['نحوي','إملائي','في حجم الخط','في الطباعة'],c:0},
+{t:'اختاري الإجابة الصحيحة',q:'لإدراج رسم SmartArt في Word، أي تبويب نختار؟',a:['إدراج','عرض','الصفحة الرئيسية','مراجعة'],c:0},
+{t:'اختاري الإجابة الصحيحة',q:'أي نوع من SmartArt مناسب لعرض خطوات عملية أو جدول زمني؟',a:['مصفوفة','معالجة','قائمة','هرمي'],c:1},
+{t:'اختاري الإجابة الصحيحة',q:'ما اختصار فتح نافذة الطباعة في Word؟',a:['Ctrl+C','Ctrl+P','Shift+F7','F7'],c:1}
+];
+const $=id=>document.getElementById(id);let name='',i=0,score=0,missed=[],locked=false;
+const arNums=n=>String(n).replace(/[0-9]/g,d=>'٠١٢٣٤٥٦٧٨٩'[d]);
+function start(){name=$('studentName').value.trim();if(!name){$('studentName').focus();$('studentName').style.borderColor='#ed67a9';return}i=0;score=0;missed=[];$('welcome').classList.add('hidden');$('done').classList.add('hidden');$('play').classList.remove('hidden');$('hello').textContent='مرحبًا، '+name+' 🌷';render()}
+function render(){locked=false;const x=questions[i];$('qcount').textContent='السؤال '+arNums(i+1)+' من '+arNums(questions.length);$('percent').textContent=arNums(Math.round(i/questions.length*100))+'٪';$('fill').style.width=(i/questions.length*100)+'%';$('score').textContent=arNums(score);$('category').textContent=x.t;$('question').textContent=x.q;$('feedback').textContent='';$('feedback').className='feedback';$('next').classList.add('hidden');const box=$('answers');box.innerHTML='';x.a.forEach((a,n)=>{const b=document.createElement('button');b.className='answer';b.textContent=a;b.onclick=()=>choose(n,b);box.appendChild(b)})}
+function choose(n,btn){if(locked)return;locked=true;const x=questions[i],buttons=[...$('answers').children];buttons.forEach((b,k)=>{b.disabled=true;if(k===x.c)b.classList.add('correct')});if(n===x.c){score++;$('feedback').textContent='إجابة صحيحة! أحسنتِ يا مبدعة ✨';$('feedback').classList.add('good')}else{btn.classList.add('wrong');$('feedback').textContent='محاولة جميلة! الإجابة الصحيحة: '+x.a[x.c]+' 💜';$('feedback').classList.add('bad');missed.push(x)}$('score').textContent=arNums(score);$('next').textContent=i===questions.length-1?'عرض نتيجتي 🏆':'السؤال التالي ←';$('next').classList.remove('hidden')}
+function next(){i++;if(i>=questions.length)finish();else render()}
+function finish(){ $('play').classList.add('hidden');$('done').classList.remove('hidden');$('fill').style.width='100%';$('resultTitle').textContent='نتيجتك يا '+name;$('finalScore').textContent=arNums(score);$('resultBar').style.width=(score/questions.length*100)+'%';let msg,emoji;if(score>=36){msg='ممتازة! أنتِ نجمة المهارات الرقمية 🌟';emoji='👑'}else if(score>=28){msg='رائعة! معرفتك الرقمية قوية جدًا 💜';emoji='🏆'}else if(score>=20){msg='عمل جميل! راجعي بعض النقاط وحاولي مجددًا 🌷';emoji='🌈'}else{msg='كل محاولة تقرّبك من الإتقان. راجعي الدروس ثم عودي أقوى 💪';emoji='🌱'}$('resultLine').textContent=msg;$('resultEmoji').textContent=emoji;const list=$('mistakes');list.innerHTML='';if(!missed.length){const li=document.createElement('li');li.textContent='أجبتِ عن جميع الأسئلة بشكل صحيح!';list.appendChild(li)}else missed.forEach(m=>{const li=document.createElement('li');li.textContent=m.q+' — الإجابة: '+m.a[m.c];list.appendChild(li)})}
+$('start').onclick=start;$('studentName').addEventListener('keydown',e=>{if(e.key==='Enter')start()});$('next').onclick=next;$('again').onclick=()=>{$('done').classList.add('hidden');$('welcome').classList.remove('hidden');$('studentName').value=name};$('print').onclick=()=>window.print();
+</script>
+</body></html>
