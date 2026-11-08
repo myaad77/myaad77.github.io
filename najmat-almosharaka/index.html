@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <title>نجمة المشاركة</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&display=swap');
+    :root{--ink:#183b35;--muted:#71837c;--green:#155e4b;--lime:#d9ef8a;--paper:#fbfaf7;--line:#e8e9df;--peach:#fff0dc}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--paper);color:var(--ink);font-family:'Alexandria','Tahoma',sans-serif;display:grid;place-items:center;padding:24px;overflow-x:hidden}
+    body:before,body:after{content:"";position:fixed;border-radius:50%;z-index:-1;filter:blur(1px)}body:before{width:390px;height:390px;background:#e9f2da;top:-175px;left:-115px}body:after{width:290px;height:290px;background:#f8ead8;bottom:-140px;right:-90px}
+    .app{width:min(100%,465px);background:rgba(255,255,255,.86);border:1px solid rgba(255,255,255,.9);border-radius:30px;padding:28px;box-shadow:0 24px 70px #233b2912;backdrop-filter:blur(12px)}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}.brand{display:flex;gap:11px;align-items:center}.brand-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:15px;background:var(--green);color:white;font-size:22px}.brand-title{font-size:14px;font-weight:700}.brand-sub{font-size:10px;color:var(--muted);margin-top:3px}.pill{background:#f0f5e8;color:#467255;border-radius:20px;padding:7px 11px;font-size:10px;font-weight:600}
+    .hero{position:relative;overflow:hidden;border-radius:23px;padding:25px 23px 23px;background:var(--green);color:white;min-height:176px}.hero:after{content:"✦";position:absolute;left:22px;top:10px;font-size:93px;color:#ffffff12;transform:rotate(12deg)}.hero-kicker{font-size:11px;color:#d9ef8a;font-weight:600}.hero h1{font-size:24px;line-height:1.65;margin:8px 0 7px;max-width:300px;font-weight:700}.hero p{font-size:11px;line-height:1.9;color:#d4e1d7;margin:0;max-width:260px}
+    .form{padding:23px 2px 8px}.label{font-size:12px;font-weight:700;display:block;margin-bottom:11px}.name-row{display:grid;grid-template-columns:1fr 1fr;gap:11px}.field{position:relative}.field input{width:100%;height:54px;border:1px solid var(--line);border-radius:15px;padding:0 14px;background:#fff;font:500 14px 'Alexandria','Tahoma',sans-serif;color:var(--ink);outline:none;transition:.2s}.field input:focus{border-color:#70a17d;box-shadow:0 0 0 4px #70a17d1a}.field input::placeholder{color:#a3ada5}.field-hint{font-size:9px;color:var(--muted);margin:7px 4px 0}
+    .message{display:none;margin:21px 0 4px;border:1px solid #e8eddd;background:#f8faef;border-radius:19px;padding:17px;animation:appear .3s ease}.message.show{display:block}@keyframes appear{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}.msg-top{display:flex;align-items:center;gap:8px;font-size:10px;color:#64805b;font-weight:600}.sparkle{width:25px;height:25px;display:grid;place-items:center;background:var(--lime);border-radius:9px;color:#406243;font-size:14px}.quote{font-size:15px;line-height:2.05;font-weight:600;margin:12px 0 16px}.quote b{color:#387854}.audio-btn{border:0;border-radius:12px;background:#e8f0df;color:#315d42;font:600 11px 'Alexandria','Tahoma',sans-serif;padding:10px 14px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:.2s}.audio-btn:hover{background:#dce9ce;transform:translateY(-1px)}.audio-btn .play{width:23px;height:23px;border-radius:8px;background:white;display:grid;place-items:center;font-size:11px}.audio-note{display:inline-block;font-size:9px;color:#859283;margin-right:9px}
+    .submit{width:100%;border:0;border-radius:15px;margin-top:19px;height:54px;background:var(--lime);color:#294832;font:700 13px 'Alexandria','Tahoma',sans-serif;cursor:pointer;transition:.2s;box-shadow:0 5px 12px #cce87a36}.submit:hover{background:#cde876;transform:translateY(-1px)}.submit:active{transform:translateY(0)}.submit span{margin-right:5px;font-size:17px;vertical-align:-1px}
+    footer{margin:17px 2px 0;padding-top:15px;border-top:1px solid #f0f0ea;font-size:9px;line-height:1.9;color:#849088;display:flex;align-items:flex-start;gap:8px}.footer-icon{font-size:14px;color:#799b79} .error{font-size:10px;color:#b44a37;display:none;margin:10px 3px 0}.error.show{display:block}
+    @media(max-width:420px){body{padding:14px}.app{padding:20px;border-radius:25px}.hero h1{font-size:21px}.pill{font-size:9px}.audio-note{display:block;margin:8px 0 0}}
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="brand"><div class="brand-icon">✦</div><div><div class="brand-title">نجمة المشاركة</div><div class="brand-sub">كلمة تقدير تصنع فرقًا</div></div></div>
+      <div class="pill">لحظة تقدير ✨</div>
+    </header>
+    <section class="hero">
+      <div class="hero-kicker">كل مشاركة تستحق التقدير</div>
+      <h1>صوتكِ يضيف للحصة<br>شيئًا جميلًا 🌱</h1>
+      <p>اختاري الطالبة، ودعي كلمة شكر صغيرة ترسم ابتسامة.</p>
+    </section>
+    <form class="form" id="studentForm">
+      <label class="label" for="firstName">لمن نرسل كلمة الشكر؟</label>
+      <div class="name-row">
+        <div class="field"><input id="firstName" autocomplete="off" placeholder="اسم الطالبة" required><div class="field-hint">الاسم الأول</div></div>
+        <div class="field"><input id="fatherName" autocomplete="off" placeholder="اسم الأب" required><div class="field-hint">للتعرّف عليها</div></div>
+      </div>
+      <div class="error" id="error">اكتبي اسم الطالبة واسم الأب أولًا 🌷</div>
+      <section class="message" id="message" aria-live="polite">
+        <div class="msg-top"><span class="sparkle">✦</span> رسالة خاصة لكِ</div>
+        <p class="quote" id="quote"></p>
+        <button class="audio-btn" type="button" id="speak"><span class="play">▶</span> استمعي للرسالة</button><span class="audio-note">اضغطي لسماعها بصوت عربي</span>
+      </section>
+      <button class="submit" type="submit">أرسلي لها كلمة شكر <span>←</span></button>
+    </form>
+    <footer><span class="footer-icon">♡</span><span>الأسماء تُستخدم لعرض الرسالة فقط، ولا تُحفظ في هذا النموذج.</span></footer>
+  </main>
+  <script>
+    const form=document.getElementById('studentForm'), first=document.getElementById('firstName'), father=document.getElementById('fatherName'), box=document.getElementById('message'), quote=document.getElementById('quote'), error=document.getElementById('error');
+    function makeMessage(){const name=first.value.trim();quote.innerHTML=`شكرًا يا <b>${escapeHtml(name)}</b> على تفاعلكِ الجميل ومشاركتكِ المميزة أثناء الحصة. وجودكِ يضيف لنا الكثير، استمري يا نجمتنا! ✨`;box.classList.add('show');error.classList.remove('show')}
+    function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+    form.addEventListener('submit',e=>{e.preventDefault();if(!first.value.trim()||!father.value.trim()){error.classList.add('show');return}makeMessage()});
+    document.getElementById('speak').addEventListener('click',()=>{if(!('speechSynthesis'in window)){alert('ميزة الصوت غير متاحة في هذا المتصفح.');return}speechSynthesis.cancel();const msg=new SpeechSynthesisUtterance(`شكرًا يا ${first.value.trim()} على تفاعلك الجميل ومشاركتك المميزة أثناء الحصة. وجودك يضيف لنا الكثير، استمري يا نجمتنا!`);msg.lang='ar-SA';msg.rate=.88;const voices=speechSynthesis.getVoices();const voice=voices.find(v=>v.lang.toLowerCase().startsWith('ar'));if(voice)msg.voice=voice;speechSynthesis.speak(msg)});
+  </script>
+</body>
+</html>
+
